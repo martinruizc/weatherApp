@@ -93,6 +93,8 @@ class Busquedas {
             return
         }
 
+        this.historial = this.historial.slice(0,5)
+
         this.historial.unshift( lugar.toLowerCase() )
         this.guardarDB()
 
